@@ -1,0 +1,23 @@
+name: unpack
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip into the repo
+        run: |
+          for f in *.zip; do
+            unzip -o "$f" -d .
+            rm "$f"
+          done
+      - name: Commit the result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add Nijatva Appstore 0.12.0 source" || echo "nothing to commit"
+          git push
