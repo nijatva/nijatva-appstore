@@ -1,0 +1,23 @@
+{
+  "name": "Vasudev Dangaya",
+  "handle": "@vasudev-work",
+  "initials": "VD",
+  "bioLine1": "Builds Android apps in Kotlin and Jetpack Compose, without Google Play Services.",
+  "bioLine2": "Nijatva is the current project: 24 small apps, no accounts, no ads, no analytics.",
+  "repositories": 33,
+  "appsPlanned": 24,
+  "appsWithCode": 9,
+  "location": "India",
+  "website": "https://vasudev-work.github.io",
+  "email": "Vasudev.work@rediffmail.com",
+  "github": "https://github.com/vasudev-work",
+  "maintains": [
+    "Nijatva Gallery",
+    "Nijatva Browser",
+    "Nijatva Camera",
+    "Nijatva Dialer",
+    "Nijatva Messages",
+    "Nijatva Music"
+  ],
+  "figuresAsOf": "17 November 2026"
+}
